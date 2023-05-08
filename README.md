@@ -28,6 +28,8 @@ The get_filepath function searches for the file in the following locations:
 4. The parent directory of the directory containing the current module file (__file__).
 5. The directory containing the calling function (sys._getframe(1)).
 6. The parent directory of the directory containing the calling function.
+7. Search in PATH
+8. Search in every folder in basedirs 
 
 If the file is found in any of these locations, the function returns the full path to the file. If the file is not found in any of these locations, the function returns the filename itself.
 
